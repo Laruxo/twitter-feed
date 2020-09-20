@@ -1,0 +1,58 @@
+.tweet {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccd6dd;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tweet-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.tweet-account {
+  font-weight: bold;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.tweet-content {
+  font-size: 1.2rem;
+}
+
+.tweet-footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tweet-date {
+  color: #657786;
+  flex: 1;
+}
+
+.tweet-like {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0);
+}
+
+.tweet-like.active,
+.tweet-like:hover {
+  filter: none;
+}
+
+.tweet-like.active:hover {
+  filter: brightness(0.8);
+}
